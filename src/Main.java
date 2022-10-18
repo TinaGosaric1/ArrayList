@@ -64,7 +64,7 @@ public class Main {
         scanner.nextLine();
         System.out.println("Enter replacement item: ");
         String newItem = scanner.nextLine();
-        groceryList.modifyGroceryItem(itemNo, newItem);
+        groceryList.modifyGroceryItem(itemNo-1, newItem);
     }
 
     public static void removeItem(){
@@ -80,7 +80,7 @@ public class Main {
         if(groceryList.findItem(searchItem) != null){
             System.out.println("Found " + searchItem + " in our grocery list");
         } else {
-            System.out.println(searchItem + " in not in the shopping list");
+            System.out.println(searchItem + " is not in the shopping list");
         }
     }
 
